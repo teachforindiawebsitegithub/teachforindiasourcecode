@@ -1,0 +1,232 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+#Registerform{
+    height: 140vh;
+    background-image: linear-gradient(to right top, #3d5266, #365d96, #595fc0, #9d52d9, #eb12d9);
+    clip-path: circle(117% at 0 100%);
+}
+
+#Transparent{
+    height: 80%;
+    width: 70%;
+    position: relative;
+    top: 13%;
+    left: 7%;
+    background-color: rgba(0, 0, 0, 0.37);
+    border-radius: 2%;
+}
+
+#Formheading{
+    color: #01D28E;
+    font-size: 2rem;
+    font-family: 'Luckiest Guy', cursive;
+    position: relative;
+    top: 3%;
+    left: 25%;
+}
+
+#form{
+    position: relative;
+    top: 3.5%;
+    padding: 1.5%;
+    color: #FAF7E6;
+    font-family: 'Mouse Memoirs', sans-serif;
+    font-size: 1.3rem;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#fname,#lname,#emails,#phone,#address{
+    background-color: #fd5e5348;
+    border-radius: 5rem;
+    text-align: center;
+}
+
+#submit{
+    padding: 1.5% 5%;
+    font-family: 'Mouse Memoirs', sans-serif;
+    background-color: #94DD4D;
+    border-radius: 2rem;
+    transition: .5s;
+    cursor: pointer;
+}
+
+#submit:hover{
+    transition: .5s;
+    background-color: #73DBC4;
+}
+
+#days{
+    color: #FD5E53;
+    font-family: 'Mouse Memoirs', sans-serif;
+    margin-top: 2%;
+}
+
+#language1,#language2{
+    color: #FD5E53;
+}
+
+#lang{
+    flex-direction: row;
+    margin: 2% 0%;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+@media screen and (max-width: 1280px) {
+
+    #Registerform{
+        height: 110vh;
+        clip-path: circle(107% at 0 80%);
+    }
+
+    #Formheading{
+        left: 23%;
+    }
+
+}
+
+@media screen and (max-width: 1024px) {
+
+    #Registerform{
+        height: 140vh;
+    }
+
+    #Formheading{
+        left: 17%;
+    }
+
+}
+
+@media screen and (max-width: 912px) {
+
+    #Registerform{
+        height: 100vh;
+        clip-path: ellipse(65% 66% at 28% 59%);
+    }
+
+    #Formheading{
+        left: 12%;
+    }
+
+    #Transparent{
+        height: 50%;
+        top: 25%;
+        left: 7%;
+    }
+
+}
+
+@media screen and (max-width: 820px) {
+
+    #Registerform{
+        height: 110vh;
+    }
+
+    #Formheading{
+        left: 8%;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    #Registerform{
+        height: 125vh;
+    }
+
+    #Formheading{
+        left: 5%;
+    }
+
+}
+
+@media screen and (max-width: 540px) {
+
+    #Registerform{
+        height: 120vh;
+    }
+
+    #Formheading{
+        left: 14%;
+        font-size: large;
+    }
+
+    #form{
+        font-size: small;
+    }
+
+}
+
+@media screen and (max-width: 414px) {
+
+    #Registerform{
+        height: 105vh;
+    }
+
+    #Formheading{
+        left: 9%;
+        font-size: medium;
+    }
+
+    #form{
+        font-size: medium;
+    }
+
+}
+
+@media screen and (max-width: 393px) {
+
+    #Registerform{
+        height: 110vh;
+    }
+
+    #Formheading{
+        left: 6.5%;
+    }
+
+}
+
+@media screen and (max-width: 375px) {
+
+    #Registerform{
+        height: 120vh;
+    }
+
+    #Formheading{
+        left: 12.3%;
+        font-size: small;
+    }
+
+    #form{
+        font-size: small;
+    }
+
+}
+
+@media screen and (max-width: 280px) {
+    #Formheading{
+        left: 7.5%;
+        font-size: 0.7rem;
+    }
+
+}
+
+@media screen and (min-width: 1400px) {
+
+    #Formheading{
+        left: 30%;
+    }
+
+}

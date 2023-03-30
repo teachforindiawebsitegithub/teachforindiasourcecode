@@ -1,0 +1,291 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+.NavBar {
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    background-color: rgba(17, 17, 17, 0.521);
+    box-shadow: 0px .25rem 0.25rem 0.15rem rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.LogoText {
+    font-family: 'Luckiest Guy', cursive;
+    color: white;
+    font-size: 170%;
+    transition: .5s;
+    padding-left: 1.5rem;
+}
+
+span {
+    color: rgb(140, 0, 255);
+}
+
+.LogoText:hover {
+    color: #ea1538;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.LogoImg {
+    height: 9vh;
+    padding-left: 2.5vw;
+}
+
+img {
+    max-height: 100%;
+    transition: width 2.5s, height 2.5s, transform 2.5s;
+}
+
+.LogoImg:hover img {
+    transform: rotate(360deg);
+    cursor: pointer;
+}
+
+.button {
+    margin-right: 1.7rem;
+}
+
+.Register {
+    font-family: 'Mouse Memoirs', sans-serif;
+    border: none;
+    border-radius: 1vw;
+    color: #ffffff;
+    background-color: rgb(140, 0, 255);
+    padding: 1vh 1vw;
+    margin-right: 1rem;
+    text-align: center;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.Register:hover {
+    transition: .5s;
+    background-color: rgb(150, 204, 3);
+}
+
+.Admin {
+    font-family: 'Mouse Memoirs', sans-serif;
+    border: none;
+    border-radius: 1vw;
+    color: #ffffff;
+    background-color: #ea1538;
+    padding: 1vh 1vw;
+    text-align: center;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.Admin:hover {
+    transition: .5s;
+    background-color: rgb(0, 150, 25);
+}
+
+.Menu {
+    display: none;
+    height: 4vh;
+}
+
+#close{
+    display: none;
+    height: 4vh;
+}
+
+#Navmob {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 9vh;
+    left: -150%;
+    width: 100%;
+    transition: 0.7s;
+}
+
+#Regmob {
+    background-color: rgba(140, 0, 255);
+    color: white;
+    padding: 2vh 2vw;
+    font-family: 'Mouse Memoirs', sans-serif;
+    font-size: 150%;
+    text-align: center;
+    transition: .5s;
+}
+
+#Regmob:hover {
+    transition: .5s;
+    background-color: rgb(150, 204, 3);
+}
+
+#Adminmob {
+    background-color: #ea1538;
+    color: white;
+    padding: 2vh 2vw;
+    font-family: 'Mouse Memoirs', sans-serif;
+    font-size: 150%;
+    text-align: center;
+    transition: .5s;
+}
+
+#Adminmob:hover {
+    transition: .5s;
+    background-color: rgb(0, 150, 25);
+    ;
+}
+
+#footer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background: #35363D;
+    padding: 2vh;
+    margin-top: -0.1rem;
+}
+
+#footer p{
+    color: whitesmoke;
+    font-family: 'Mouse Memoirs', sans-serif;
+}
+
+#thank{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: space-between;
+    background-image: linear-gradient(to right top, #3d5266, #365d96, #595fc0, #9d52d9, #eb12d9);
+    clip-path: circle(117% at 0 100%);
+}
+
+#home{
+    background-color: #FC2947;
+    border-radius: 1rem;
+    padding: 1.7%;
+    margin: -15% 5%;
+    margin-bottom: 5%;
+    color: whitesmoke;
+    font-family: 'Mouse Memoirs', sans-serif;
+    font-size: x-large;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+#home:hover{
+    background-color: #EA5455;
+    transition: 0.5s;
+}
+
+#thankhead{
+    margin: 25% 7%;
+    color: whitesmoke;
+    font-family: 'Mouse Memoirs', sans-serif;
+    font-size: xx-large;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a{ color: inherit;}
+
+@media screen and (max-width: 590px) {
+    .Menu {
+        display: block;
+        margin-right: 1rem;
+        cursor: pointer;
+        transition: 0.5s;
+    }
+
+    #close{
+        display: none;
+        margin-right: 1rem;
+        cursor: pointer;
+        transition: 0.5s;
+    }
+
+    .button {
+        display: none;
+    }
+
+    .LogoImg {
+        margin-left: -30vw;
+    }
+
+    .LogoText {
+        font-size: 80%;
+    }
+
+}
+
+@media screen and (max-width: 320px) {
+    .Menu {
+        margin-right: 2rem;
+    }
+
+    #close{
+        margin-right: 2rem;
+    }
+
+    #Navmob{
+        top: 7%;
+    }
+
+    .LogoImg {
+        display: none;
+    }
+
+    .LogoText {
+        font-size: 100%;
+        padding-top: 2vh;
+        padding-bottom: 2vh;
+    }
+}
+
+@media screen and (max-width: 912px) {
+
+    #thank{
+        clip-path: ellipse(65% 66% at 28% 59%);
+    }
+}
+
+@media screen and (max-width: 540px) {
+
+    #home{
+        padding: 4%;
+    }
+
+    #thankhead{
+        margin: 55% 7%;
+        font-size: larger;
+    }
+
+}
+
+@media screen and (max-width: 393px) {
+
+    #thankhead{
+        margin: 75% 7%;
+        font-size: 2rem;
+    }
+
+}
+
+@media screen and (max-width: 280px) {
+
+    #thankhead{
+        width: 80%;
+    }
+
+}

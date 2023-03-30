@@ -1,0 +1,500 @@
+html,body{
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+
+.NavBar {
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    background-color: rgba(17, 17, 17, 0.521);
+    box-shadow: 0px .25rem 0.25rem 0.15rem rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.LogoText {
+    font-family: 'Luckiest Guy', cursive;
+    color: white;
+    font-size: 170%;
+    transition: .5s;
+    padding-left: 1.5rem;
+}
+
+span {
+    color: rgb(140, 0, 255);
+}
+
+.LogoText:hover {
+    color: #ea1538;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.LogoImg {
+    height: 9vh;
+    padding-left: 2.5vw;
+}
+
+img {
+    max-height: 100%;
+    transition: width 2.5s, height 2.5s, transform 2.5s;
+}
+
+.LogoImg:hover img {
+    transform: rotate(360deg);
+    cursor: pointer;
+}
+
+.button {
+    margin-right: 1.7rem;
+}
+
+.Register {
+    font-family: 'Mouse Memoirs', sans-serif;
+    border: none;
+    border-radius: 1vw;
+    color: #ffffff;
+    background-color: rgb(140, 0, 255);
+    padding: 1vh 1vw;
+    margin-right: 1rem;
+    text-align: center;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.Register:hover {
+    transition: .5s;
+    background-color: rgb(150, 204, 3);
+}
+
+.Admin {
+    font-family: 'Mouse Memoirs', sans-serif;
+    border: none;
+    border-radius: 1vw;
+    color: #ffffff;
+    background-color: #ea1538;
+    padding: 1vh 1vw;
+    text-align: center;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.Admin:hover {
+    transition: .5s;
+    background-color: rgb(0, 150, 25);
+}
+
+.Menu {
+    display: none;
+    height: 4vh;
+}
+
+#close{
+    display: none;
+    height: 4vh;
+}
+
+#Navmob {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 9vh;
+    left: -150%;
+    width: 100%;
+    transition: 0.7s;
+}
+
+#Regmob {
+    background-color: rgba(140, 0, 255);
+    color: white;
+    padding: 2vh 2vw;
+    font-family: 'Mouse Memoirs', sans-serif;
+    font-size: 150%;
+    text-align: center;
+    transition: .5s;
+}
+
+#Regmob:hover {
+    transition: .5s;
+    background-color: rgb(150, 204, 3);
+}
+
+#Adminmob {
+    background-color: #ea1538;
+    color: white;
+    padding: 2vh 2vw;
+    font-family: 'Mouse Memoirs', sans-serif;
+    font-size: 150%;
+    text-align: center;
+    transition: .5s;
+}
+
+#Adminmob:hover {
+    transition: .5s;
+    background-color: rgb(0, 150, 25);
+    ;
+}
+
+
+#Topcontent{
+    display: flex;
+    flex-direction: row;
+    background-image: linear-gradient(to right top, #3d5266, #365d96, #595fc0, #9d52d9, #eb12d9);
+    clip-path: circle(117% at 0 100%);
+    height: 100vh;
+}
+  
+
+#Topcontent img{
+    position: relative;
+    top: 18%;
+    right: 15%;
+}
+
+
+#Topcontent h1{
+    font-family: 'Luckiest Guy', cursive;
+    color: #00C9A7;
+    position: relative;
+    top: 30%;
+    right: 10%;
+}
+
+#Topcontent p{
+    font-family: 'Mouse Memoirs', sans-serif;
+    color: #FBEAFF;
+    font-size: 2rem;
+    position: relative;
+    top: 32%;
+    right: 10%;
+    width: 50%;
+}
+
+#Middlecontent{
+    margin-top: -0.1rem;
+    display: flex;
+    flex-direction: row;
+    background-image: linear-gradient(to right bottom, #3d5266, #365d96, #595fc0, #9d52d9, #eb12d9);
+    clip-path: circle(117% at right 100%);
+    height: 100vh;
+}
+
+
+#Middlecontent h1{
+    font-family: 'Luckiest Guy', cursive;
+    color: #FF8066;
+    position: relative;
+    top: 30%;
+    left: 40%;
+}
+
+#Middlecontent p{
+    font-family: 'Mouse Memoirs', sans-serif;
+    color: #FBEAFF;
+    font-size: 2rem;
+    position: relative;
+    top: 32%;
+    left: 40%;
+    width: 50%;
+}
+
+#Fellowship{
+    text-align: center;
+    background-image: linear-gradient(to right top, #3d5266, #365d96, #595fc0, #9d52d9, #eb12d9);
+    font-family: 'Mouse Memoirs', sans-serif;
+    font-size: larger;
+    color: whitesmoke;
+    padding: 1vh;
+    margin-top: -0.1rem;
+}
+
+#Fellow{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 2rem;
+    margin-top: -0.1rem;
+    background-image: linear-gradient(to right bottom, #3d5266, #365d96, #595fc0, #9d52d9, #eb12d9);
+    border-radius: 23rem 0rem 23rem 0rem;
+}
+
+.Fellowimg{
+    height: 35vh;
+    border: 2rem ridge #ea1538;
+    background-color: #FF9671;
+}
+
+.Fellowh2{
+    font-family: 'Mouse Memoirs', sans-serif;
+    text-align: center;
+    position: relative;
+    top: -10.5vh;
+    background-color: #008CCA;
+    color: black;
+    padding: 2vh;
+    height: 3vh;
+}
+
+#Fellowreg{
+    text-align: center;
+    background-image: linear-gradient(to right top, #3d5266, #365d96, #595fc0, #9d52d9, #eb12d9);
+    font-family: Georgia, serif;
+    font-size: larger;
+    color: white;
+    padding: 1vh;
+    margin-top: -0.1rem;
+    padding-bottom: 4vh;
+}
+
+#footer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background: #35363D;
+    padding: 2vh;
+    margin-top: -0.1rem;
+}
+
+#footer p{
+    color: whitesmoke;
+    font-family: 'Mouse Memoirs', sans-serif;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+@media screen and (max-width: 590px) {
+    .Menu {
+        display: block;
+        margin-right: 1rem;
+        cursor: pointer;
+        transition: 0.5s;
+    }
+
+    #close{
+        display: none;
+        margin-right: 1rem;
+        cursor: pointer;
+        transition: 0.5s;
+    }
+
+    .button {
+        display: none;
+    }
+
+    .LogoImg {
+        margin-left: -30vw;
+    }
+
+    .LogoText {
+        font-size: 80%;
+    }
+
+}
+
+@media screen and (max-width: 320px) {
+    .Menu {
+        margin-right: 2rem;
+    }
+
+    #close{
+        margin-right: 2rem;
+    }
+
+    #Navmob{
+        top: 7%;
+    }
+
+    .LogoImg {
+        display: none;
+    }
+
+    .LogoText {
+        font-size: 100%;
+        padding-top: 2vh;
+        padding-bottom: 2vh;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+
+    #Topcontent img{
+        top: 19%;
+        height: 70%;
+    }
+
+    #Topcontent h1{
+        top: 30%;
+        right: 30%;
+    }
+    
+    #Topcontent p{
+        top: 32%;
+        right: 30%;
+        width: 70%;
+    }
+
+    #Middlecontent img{
+        position: relative;
+        top: 20%;
+        height: 80%;
+    }
+
+    #Middlecontent h1{
+        top: 30%;
+    }
+    
+    #Middlecontent p{
+        top: 32%;
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 912px) {
+
+    #Topcontent{
+        flex-direction: column;
+        clip-path: ellipse(65% 66% at 28% 59%);
+    }
+
+    #Topcontent img{
+        top: 25%;
+        right: 15%;
+        height: 50vh;
+    }
+
+    #Topcontent h1{
+        top: 70%;
+        left: 20%;
+    }
+    
+    #Topcontent p{
+        top: 72%;
+        left: 20%;
+        width: 50%;
+    }
+
+    #Middlecontent{
+        flex-direction: column;
+        clip-path: ellipse(65% 66% at 70% 57%);
+    }
+
+    #Middlecontent img{
+        top: 30%;
+        left: 25%;
+        height: 50vh;
+    }
+
+    #Middlecontent h1{
+        top: 70%;
+        left: 40%;
+    }
+    
+    #Middlecontent p{
+        top: 72%;
+        left: 40%;
+        width: 50%;
+    }
+
+    .imgdisplay{
+        display: none;
+    }
+
+    .Fellowh2{
+        top: -8.7vh;
+    }
+
+}
+
+@media screen and (max-width: 540px) {
+    #Topcontent h1{
+        top: 55%;
+        left: 15%;
+    }
+    
+    #Topcontent p{
+        top: 57%;
+        left: 15%;
+        font-size: large;
+    }
+
+    #Middlecontent h1{
+        top: 55%;
+        left: 34%;
+    }
+    
+    #Middlecontent p{
+        top: 57%;
+        left: 34%;
+        font-size: large;
+    }
+
+    .Fellowh2{
+        top: -10vh;
+    }
+}
+
+@media screen and (max-width: 414px) {
+
+    #Topcontent img{
+        top: 25%;
+        right: 20%;
+        height: 42vh;
+    }
+
+    #Middlecontent img{
+        top: 40%;
+        left: 14%;
+        height: 40vh;
+    }
+
+    .Fellowimg{
+        height: 25vh;
+        margin-bottom: 4%;
+        margin-top: 4%;
+    }
+
+    .Fellowh2{
+        top: -9.5vh;
+    }
+
+    #Fellow{
+        flex-direction: column;
+    }
+
+}
+
+@media screen and (max-width: 280px) {
+
+    #Topcontent img{
+        top: 35%;
+        height: 37vh;
+    }
+
+    #Topcontent h1{
+        font-size: large;
+    }
+
+    #Middlecontent h1{
+        font-size: large;
+    }
+
+    #Middlecontent img{
+        height: 37vh;
+    }
+
+    .Fellowh2{
+        top: -10.5vh;
+    }
+
+}
