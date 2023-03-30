@@ -1,5 +1,3 @@
-<!--Code to redirect user if not logged in-->
-
 <?php session_start();
 
 if(!isset($_SESSION['uname'])){
